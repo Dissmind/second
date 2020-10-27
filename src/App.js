@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
 
+import React, { Suspense } from 'react'
+import {Route, Switch} from 'react-router-dom'
+import Login from './componets/Login/Login.js'
+import Pokemons from './componets/Pokemons/Pokemons.js'
+
+const PokemonsS = (
+    <Suspense fallback={<p>Loading</p>}>
+        <Pokemons />
+    </Suspense>
+)
+
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Switch>
+      <Route path='/pokemons' component={Pokemons}/>
+      <Route path='/' component={Login}/>
+    </Switch>
   );
 }
 

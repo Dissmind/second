@@ -1,0 +1,26 @@
+.Card {
+    margin: 40px;
+    padding: 15px;
+    border: solid .5px black;
+    width: 70%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    background: #EBEBEB;
+}
+
+
+.Card > img {
+    height: 80%;
+    width: 100%;
+}
+
+
+@media only screen and (max-width : 950px) {
+    .Card {
+        width: 50%;
+    }
+}
+

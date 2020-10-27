@@ -34,5 +34,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "axios": "^0.21.0",
+    "axios-hook": "0.0.6",
+    "axios-hooks": "^2.1.0",
+    "react-router-dom": "^5.2.0",
+    "use-axios": "^0.3.5"
   }
 }
