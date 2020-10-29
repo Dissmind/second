@@ -1,0 +1,14 @@
+.Layout {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+
+.Layout .window {
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 88vh;
+    box-sizing: border-box;
+}

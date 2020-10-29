@@ -1,0 +1,18 @@
+.Login {
+    position: absolute;
+    top: 25%;
+    left: 37%;
+    width: 600px;
+    height: 400px;
+    border-radius: 1%;
+    background: #EBEBEB;
+    box-shadow: 10px 10px 10px #535050;
+}
+
+
+
+.Login .Popup > .content {
+    border-radius: 1%;
+    background: #EBEBEB;
+    box-shadow: 10px 10px 10px #535050;
+}

@@ -1,0 +1,22 @@
+.Opt h1 {
+    text-align: center;
+}
+
+.Opt .code {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 20px;
+}
+
+
+.Opt input {
+    font-size: 20px;
+    padding: 5px;
+}
+
+
+.Opt .Button {
+    margin-top: 5vh;
+}

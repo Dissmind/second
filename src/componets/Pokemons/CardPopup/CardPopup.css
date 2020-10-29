@@ -1,0 +1,49 @@
+/* Info */
+.CardPopup .info {
+    display: flex;
+    height: 55vh;
+    margin-bottom: 4vh;
+    border: .5px solid black;
+}
+
+
+/* Image */
+.CardPopup .img {
+    background: #C4C4C4;
+    width: 50%;
+}
+
+.CardPopup .img img {
+    position: relative;
+    top: 4%;
+    left: 15%;
+    width: 70%;
+    height: 90%;
+    min-width: 300px;
+}
+
+
+.CardPopup .row {
+    padding-bottom: .7em;
+}
+
+.CardPopup .text {
+    position: relative;
+    text-align: center;
+    background: #222222;
+    width: 50%;
+    color: white;
+    padding: 2em;
+}
+
+.CardPopup hr {
+    width: 70%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.CardPopup .value {
+    display: inline-block;
+    margin-left: .5em;
+}
+

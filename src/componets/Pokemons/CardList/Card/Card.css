@@ -1,0 +1,61 @@
+.Card {
+    padding: 15px;
+    border: solid .5px black;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 2%;
+    background: #222;
+    box-shadow: 10px 10px 5px #535050;
+    font-size: 1.2em;
+    color: #ccc;
+    transition: .5s;
+}
+
+
+/* Button */
+.Card .Button {
+    background: #EBEBEB;
+    color: #222222;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    box-shadow: 2px 2px 5px white;
+    width: 50%;
+    text-align: center;
+    border: solid #ccc .5px;
+    margin-left: 25%;
+    font-size: 1em;
+}
+.Card:hover {
+    box-shadow: 5px 5px 5px white;
+    opacity: .9;
+    cursor: pointer;
+}
+
+
+.Card hr {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.Card img {
+    height: 25vh;
+}
+
+.Card .info {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+
+
+@media only screen and (max-width : 950px) {
+    .Card {
+        width: 50%;
+    }
+}
+
+
+

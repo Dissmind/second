@@ -1,0 +1,56 @@
+.CardView {
+    border: solid black 1px;
+    height: 100%;
+}
+
+
+.CardView .img {
+    background: #C4C4C4;
+    display: flex;
+    justify-content: center;
+    height: 88vh;
+}
+
+
+.CardView img {
+    width: 60%;
+    min-height: 500px;
+    max-height: 700px;
+}
+
+.CardView .info {
+    padding: 20px;
+}
+
+
+.CardView .text {
+    position: relative;
+    text-align: center;
+    background: #222222;
+    width: 50%;
+    color: white;
+    padding: 2em;
+}
+
+.CardView .text {
+    position: relative;
+    text-align: center;
+    background: #222222;
+    width: 50%;
+    color: white;
+    padding: 2em;
+}
+.CardView .row {
+    padding-bottom: .7em;
+}
+
+.CardView .value {
+    display: inline-block;
+    margin-left: .5em;
+}
+
+.CardView hr {
+    width: 70%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
