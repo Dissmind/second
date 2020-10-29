@@ -28,4 +28,8 @@
 - Было очень весело изобретать велосипеды
 
 
+Скриншоты
 
+![img](https://i.imgur.com/9kkQKss.png)
+![img](https://i.imgur.com/bTUraXc.png)
+![img](https://i.imgur.com/WvnoKhA.png)

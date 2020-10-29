@@ -10,9 +10,9 @@ export const Auth = ({onSignIn}) => {
 
     // Заглушка
     const check = (login, password) => (
-        login    == '123' &&
 
-        password == '123'
+        login    == 'kode@kode.ru' &&
+        password == 'Enk0deng'
     )
 
     const onSubmit = (event) => {
