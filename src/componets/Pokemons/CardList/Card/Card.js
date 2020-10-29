@@ -1,15 +1,21 @@
 import React from 'react'
 import './Card.css'
 
-export const Card = prop => {
 
-    const card = prop.card
+export const Card = ({card, onHandler}) => (
+    <div
+        className='Card'
+        onClick={onHandler}
+    >
+        <div>
+            <div className={'center-wrapper'}>
+                <img src={card.imageUrl} alt="card image"/>
+            </div>
 
-    return (
-        <div className='Card'>
-            <img src={card.imageUrl} alt="card image"/>
-            <div className="row">Name: {card.name}</div>
-            <div className="row">Artist: {card.artist}</div>
+            <div className="info">
+                <div className="row center-wrapper">Name: {card.name}</div>
+                <div className="row center-wrapper">Artist: {card.artist}</div>
+            </div>
         </div>
-    )
-}
+    </div>
+)

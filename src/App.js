@@ -2,23 +2,20 @@ import './App.css';
 
 import React, { Suspense } from 'react'
 import {Route, Switch} from 'react-router-dom'
-import Login from './componets/Login/Login.js'
-import Pokemons from './componets/Pokemons/Pokemons.js'
 
-const PokemonsS = (
-    <Suspense fallback={<p>Loading</p>}>
-        <Pokemons />
-    </Suspense>
-)
+import { PokemonsPage } from './pages/PokemonsPage.js'
+import { LoginPage } from './pages/LoginPage.js'
+
 
 function App() {
-
-
   return (
-    <Switch>
-      <Route path='/pokemons' component={Pokemons}/>
-      <Route path='/' component={Login}/>
-    </Switch>
+      <Suspense fallback={<p>Loading</p>}>
+        <Switch>
+            {/* TODO: <Route path='/pokemons/:id' component={CardViewPage}/>*/}
+            <Route path='/pokemons' component={PokemonsPage}/>
+            <Route path='/' component={LoginPage}/>
+        </Switch>
+      </Suspense>
   );
 }
 

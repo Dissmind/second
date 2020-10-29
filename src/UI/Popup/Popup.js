@@ -2,8 +2,6 @@ import React, { useEffect } from 'react'
 import './Popup.css'
 
 
-
-
 export const Popup = ({width, height, onClose, children}) => {
 
     const position = (val) => {

@@ -1,14 +1,13 @@
 .Login {
     position: absolute;
-    top: 15%;
-    left: 30%;
-    width: 40%;
-    height: 60vh;
+    top: 25%;
+    left: 37%;
+    width: 600px;
+    height: 400px;
     border-radius: 1%;
     background: #EBEBEB;
     box-shadow: 10px 10px 10px #535050;
 }
-
 
 
 

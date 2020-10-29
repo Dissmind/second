@@ -17,13 +17,15 @@ export function GetSubTypes() {
 }
 
 
-export function GetCards(type = null, value = null) {
+export function GetCards() {
     let url = domain + 'cards/?supertype=Pokémon'
 
-    if (type != null) {
-        url += `&${type}=${value}`
-    }
+    return useAxios(url).data.cards
+}
 
-    const result = useAxios(url).data.cards
-    return result
+
+export function GetCard(id) {
+    let url = domain + 'cards/?supertype=Pokémon&id=' + id
+
+    return useAxios(url).data.cards
 }

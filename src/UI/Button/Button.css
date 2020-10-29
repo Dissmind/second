@@ -1,0 +1,23 @@
+.Button {
+    display: inline-block;
+    background: #222;
+    border-radius: 5%;
+    padding: 10px;
+    color: #ccc;
+    font-size: 1.5em;
+    box-shadow: 5px 5px 5px black;
+    transition: .5s;
+}
+
+.Button:hover {
+    transition: .5s;
+    box-shadow: 10px 10px 10px black;
+    cursor: pointer;
+    color: white;
+}
+
+.Button:active {
+    cursor: wait;
+    opacity: .7;
+    box-shadow: 3px 3px 3px black;
+}

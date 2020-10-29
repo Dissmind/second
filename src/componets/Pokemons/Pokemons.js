@@ -2,20 +2,25 @@ import React, { Suspense, useState } from 'react'
 import './Pokemons.css'
 
 import CardList from './CardList/CardList.js'
-import SideBar from './SideBar/SideBar.js'
-import Header from './Header/Header.js'
+import SideBar from '../SideBar/SideBar.js'
+import Header from '../Header/Header.js'
 import { GetCards } from '../../API/PokemonRepository.js'
+import { Popup } from '../../UI/Popup/Popup.js'
+import { CardPopup } from './CardPopup/CardPopup.js'
 
 
 function Pokemons() {
 
     const [cards, setCards] = useState(null)
 
+    const [popupCard, setPopupCard] = useState(null)
+
+    const onOpenPopup = (popupCard) => setPopupCard(popupCard)
 
     return (
         // <Suspense fallback={<p>Loading</p>}>
             <div className={'Pokemons'}>
-                <Header />
+                {/*<Header />*/}
 
                 <div className="row-block">
                     <Suspense fallback={<p>Loading</p>}>
@@ -28,9 +33,23 @@ function Pokemons() {
                         <CardList
                             cards={cards}
                             setCards={setCards}
+                            onOpen={onOpenPopup}
                         />
                     </Suspense>
                 </div>
+
+
+                {
+                    (popupCard !== null)
+                      ?<Popup
+                            onClose={() => {setPopupCard(null)}}
+                            width={70}
+                            height={70}
+                        >
+                            <CardPopup card={popupCard} />
+                        </Popup>
+                      : null
+                }
             </div>
         // </Suspense>
     )

@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
-
 import './Login.css'
+
 import { Popup } from '../../UI/Popup/Popup.js'
 import { Opt } from './Opt/Opt.js'
 import { Auth } from './Auth/Auth.js'
 
 
-function Login() {
-    const [opt, setOpt] = useState(false)
+const Login = () => {
 
+    const [opt, setOpt] = useState(false)
 
 
     return (

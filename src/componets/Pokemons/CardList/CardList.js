@@ -5,21 +5,26 @@ import { Card } from './Card/Card.js'
 import { GetCards } from '../../../API/PokemonRepository.js'
 
 
-export default function CardList(prop) {
-    if (prop.cards == null) {
-        prop.setCards(GetCards())
+export default function CardList({cards, setCards, onOpen}) {
+    if (cards == null) {
+        setCards(GetCards())
     }
 
-    console.log(prop.cards)
 
     return (
         <div className={'CardList'}>
-            {
-
-                (prop.cards != null)
-                ? prop.cards.map(card => <Card card={card} />)
-                : null
-            }
+            <div className="list">
+                {
+                    (cards != null)
+                        ? cards.map(
+                                card => <Card
+                                    onHandler={() => onOpen(card)}
+                                    card={card}
+                                />
+                            )
+                        : null
+                }
+            </div>
         </div>
     )
 }

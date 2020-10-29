@@ -1,22 +1,25 @@
 .CardList {
+    position: relative;
+    top: 0;
+    left: 0;
     width: 80%;
-    height: 90vh;
-    margin-left: 30px;
-    margin-right: 30px;
+    height: 85vh;
+    margin-left: 3%;
     overflow-y: scroll;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(auto-fill, 1fr);
-    row-gap: 10px;
-
-    background: #FAFAFA;
+    border-radius: 1%;
+    background: #EBEBEB;
+    box-shadow: -10px 10px 10px #535050;
 }
 
+.CardList .list {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 
+    grid-template-rows: repeat(auto-fill, 1fr);
 
-.CardList > .Card {
-    /*grid-column: 10;*/
+    row-gap: 4vh;
+    column-gap: 2.5%;
 }
 
 

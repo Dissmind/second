@@ -7,7 +7,6 @@ export const DropDown = prop => (
             onChange={prop.onChange}
         >
             <option>{prop.default}</option>
-
             {
                 (prop.options.length != undefined)
                     ? prop.options.map(i => <option>{i}</option>)
